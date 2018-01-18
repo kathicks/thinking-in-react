@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navigation = (props) => (
+const Navigation = ({toggleMenu}) => (
   <nav className="navbar navbar-default navbar-fixed-top navbar-custom">
       <div className="container">
           <div className="navbar-header">
@@ -11,7 +11,7 @@ const Navigation = (props) => (
                   <a href="#about">About us</a>
               </li>
               <li>
-                <button onClick={ props.toggleMenu } className="btn btn-lg btn-outline">
+                <button onClick={() => toggleMenu() }  className="btn btn-lg btn-outline">
                   <i className="fa fa-graduation-cap"></i> <span>Training</span>
                 </button>
               </li>
